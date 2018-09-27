@@ -13,6 +13,9 @@
   },
   "author": "The AMP HTML Authors",
   "license": "Apache-2.0",
+  "bin": {
+    "worker-dom": "./bin/worker-dom"
+  },
   "scripts": {
     "pretest": "rimraf output && tsc -p config/tsconfig.test.worker-thread.json & tsc -p config/tsconfig.test.json & tsc -p config/tsconfig.test.main-thread.json & wait",
     "test": "ava -v output/test/**/*.js",
